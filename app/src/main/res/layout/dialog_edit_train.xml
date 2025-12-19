@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/edit_train_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Train Name"
+        android:textColor="@color/b3"
+        android:textColorHint="@color/b3"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edit_train_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/b3"
+        android:textColorHint="@color/b3"
+        android:hint="Enter Train Nb"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:cornerRadius="20px"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#1B38F3"
+        android:text="Save"/>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/b5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Create New Account "
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <!-- Username Field -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="11dp"
+        android:backgroundTint="@color/b3"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint=" Username"
+            android:drawableEnd="@drawable/baseline_person_24"
+            android:textColorHint="@color/white"
+            android:textColor="@android:color/white"
+            android:paddingStart="20dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Email Field -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="11dp"
+        android:backgroundTint="@color/b3"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint=" Email"
+            android:drawableEnd="@drawable/baseline_attach_email_24"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:paddingStart="20dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Password Field with Eye Icon -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="11dp"
+        android:backgroundTint="@color/b3"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/white"
+                android:paddingStart="20dp"
+                android:paddingEnd="50dp"/>
+
+            <ImageView
+                android:id="@+id/togglePassword"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/eyeclosed"
+                android:tint="@color/white"
+                android:contentDescription="Toggle Password"
+                tools:ignore="UseAppTint" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Sign Up"
+        android:layout_marginTop="15dp"
+        app:cornerRadius="20px"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#1B38F3" />
+
+    <!-- Login Link -->
+    <TextView
+        android:id="@+id/loginLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--------Already have an account? Login here--------"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:padding="12dp"/>
+
+</LinearLayout>
